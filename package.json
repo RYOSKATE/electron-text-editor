@@ -7,7 +7,7 @@
     "start": "electron .",
     "build": "webpack --display-error-details -w",
     "production": "webpack --mode=production",
-    "package" : "electron-packager . electronTextEditor --platform=win32 --arch=x64 --electron-version=6.0.11"
+    "package": "electron-packager . electronTextEditor --platform=win32 --arch=x64 --electron-version=6.0.11"
   },
   "author": "ryoskate",
   "license": "MIT",
@@ -20,6 +20,8 @@
     "@typescript-eslint/parser": "^2.3.2",
     "electron": "^6.0.11",
     "electron-packager": "^14.0.6",
+    "electron-reload": "^2.0.0-alpha.1",
+    "electron-reloader": "^1.2.1",
     "eslint": "^6.5.1",
     "eslint-config-prettier": "^6.4.0",
     "eslint-plugin-prettier": "^3.1.1",
