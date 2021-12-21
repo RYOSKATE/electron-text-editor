@@ -33,16 +33,6 @@ const createWindow = (): void => {
 // アプリの起動と終了
 app.on('ready', () => {
   createWindow();
-
-  if (isEnv && mainWindow) {
-    mainWindow.webContents.openDevTools();
-    BrowserWindow.addDevToolsExtension(
-      path.join(
-        os.homedir(),
-        '/AppData/Local/Google/Chrome/User Data/Default/Extensions/fmkadmapgofadopljbjfkapdkoienihi/4.2.0_0'
-      )
-    );
-  }
 });
 app.on('window-all-closed', () => {
   app.quit();
